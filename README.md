@@ -8,7 +8,6 @@ When you will complete this Code Pattern, you will understand how to:
 
 * Build a Docker image from an existing application.
 * Deploy a Docker image to IBM Cloud Private.
-* Deploy a Helm chart.
 * Use the catalog from IBM Cloud Private.
 
 # Architecture
