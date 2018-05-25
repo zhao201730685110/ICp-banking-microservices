@@ -204,10 +204,10 @@ The objective is to discover the banking application located in the *banking-app
 
    `git push"`
 
-3. Go back to your online Github repository *ICp-banking-microservices* using the web browser. Your code has been updated. 
+3. Go back to your online Github repository *ICp-banking-microservices* using the web browser. 
 
 	![alt text](images/commit-push-repo.png "git push")
-	* See the commit label *Update of BankingAPI.js*
+	* Check that your code has been updated with commit label *Update of BankingAPI.js*
 
 ---
 
