@@ -161,7 +161,7 @@ The objective is to discover the banking application located in the *banking-app
 
 3. Launch a terminal and test if Node.Js and npm are installed in your operating system and added to the system path:
 	
-	![alt text](images/node-npm-test.png "npm node test command")
+	![alt text](images/node-npm-test1.png "npm node test command")
 	* Run the command *node -v*.
 	* Run the command *npm -v*.
 
