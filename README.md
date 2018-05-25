@@ -99,12 +99,12 @@ The objective is to discover the banking application located in the *banking-app
 5. Import the source code into your favorite IDE and take a look at the *banking-application* folder:
 
 	![alt text](images/banking_app_structure.png "Banking application")
-	* *app.js*: the Node.js application (server code).
-	* *public/index.html*: the banking application (client code).
-	* *public/css*: the banking application stylesheet.
-	* *public/js*: Javascript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
+	* *app.js*: the application server code.
+	* *public/index.html*: the application client code (banking dashboard).
+	* *public/css*: the application stylesheet.
+	* *public/js*: the JavaScript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
 	* *package.json*: the package dependency file.
-	* *Dockerfile*: file to build the docker file. it will be used later.
+	* *Dockerfile*: file to build the docker image. it will be used later (step 2).
 
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
 
