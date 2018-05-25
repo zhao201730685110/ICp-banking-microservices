@@ -261,9 +261,9 @@ Jenkins is an open source automation server. It helps automate the non-human par
 	![alt text](images/jenkins_build_details.png "Jenkins details")
 
 6.  Read the build output to understand how the Jenkins build has been executed:
-	* Jenkins pulled your source code from yout GitHub repository.
+	* Jenkins pulled your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
 	* Jenkins built the Docker image from the Docker file described before.
-	* The Docker build action automatically added it to the Docker image repository of the ICp worker node on Linux on Z. Your banking application is now ready to be instantiated from the ICp catalog.
+	* The build action automatically added the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. Your banking application is now ready to be instantiated from the ICp catalog.
 
 ---
 
