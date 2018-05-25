@@ -85,14 +85,14 @@ The objective is to discover the banking application located in the *banking-app
 	* Github automatically forks this project from this repository *IBM/ICp-banking-microservices* to your repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
 	* Discover the forked project in your Github repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
 
-3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository.
-	* Use *git clone* command to create a local copy of the source code from a GitHub repository.
-	* Use *git pull* command to get fresh code from your GitHub repository.
-	* Use *git push* command to push new code to your GitHub repository.
+3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository. Git has three main commands:
+	* *git clone* is the command for creating a local copy of the source code from a GitHub repository.
+	* *git pull* is the command for pulling fresh code from a GitHub repository.
+	* *git push* is the command for pushing new code to a GitHub repository.
 
 4. Launch a terminal and clone your GitHub repository to create a local copy of your banking application:
 
-   `git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME`
+   `git clone https://github.com/YOUR_USERNAME/ICp-banking-microservices`
     
 	![alt text](images/clone.png "Clone the banking app")
 	
