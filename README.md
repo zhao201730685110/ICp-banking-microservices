@@ -237,7 +237,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 ## Part 2 -  Deploy the docker image to IBM Cloud private
 
-Jenkins is an open source automation server. It helps automate the non-human part of the software development process with continuous integration, and facilitates technical aspects of continuous delivery. It supports version control tools, including Git, and can execute shell scripts. In this Code Pattern, Jenkins has been setup in the ICp Worker Node on Linux on Z. It is used to automatically build a docker image from a GitHub repository to comply with a DevOps approach. After the build process, Jenkins deploys the Docker image to the Docker repository of ICp Worker Node based on Linux on Z.
+Jenkins is an open source automation server. It helps automate the non-human part of the software development process with continuous integration, and facilitates technical aspects of continuous delivery. It supports version control system, including Git, and can execute shell scripts. In this Code Pattern, Jenkins has been set up in the ICp Worker Node on Linux on Z. It is used to automatically build a Docker image from a GitHub repository with a DevOps approach. Then, Jenkins deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
 
 1. Connect to [Jenkins](http://148.100.92.185:8080/job/docker-build-icp/build?delay=0sec).
 
