@@ -8,12 +8,12 @@ When you will complete this Code Pattern, you will understand how to:
 
 * Build a Docker image from an existing application.
 * Deploy a Docker image to IBM Cloud Private.
-* Deploy a Helm chart.
-* Use the catalog from IBM Cloud Private.
+* Run the existing application using the IBM Cloud Private catalog.
+
 
 # Architecture
 
-This journey accesses a fictitious retail banking system called MPLbank. MPLbank integrates an Account Management System running on IBM Mainframe. On top of this component, an API layer based on IBM API Connect has been set up to deliver a banking API. It makes banking services reachable through API from all kind of applications. IBM Cloud private has been configured into the LinuxOne LinuxONE Community Cloud.
+This journey accesses a fictitious retail banking system called MPLbank. MPLbank integrates an Account Management System running on IBM Mainframe. On top of this component, an API layer based on IBM API Connect has been set up to deliver banking APIs. It makes banking services reachable through APIs from all kind of applications. IBM Cloud private has been configured into the LinuxOne LinuxONE Community Cloud.
 
 ![alt text](images/architecture_pattern.png "Architecture")
 
@@ -75,18 +75,22 @@ The objective is to discover the banking application located in the *banking-app
 	* Enter an email.
 	* Create a password.
 	* Click **Sign up for GitHub**.
+	* Select the plan *Unlimited public repositories for free*.
+	* A Confirmation email will be sent. Verify your email address to collaborate in Github.
 
 2. Fork the banking application from this GitHub repository to your own GitHub repository.
 
 	![alt text](images/fork.png "Fork the banking app")
 	* Click **Fork**.
+	* Github automatically forks this project from this repository *IBM/ICp-banking-microservices* to your repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
+	* Discover your forked project (your fresh banking application) in your Github repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
 
-3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository.
-	* Use *git clone* command to create a local copy of the source code from a GitHub repository.
-	* Use *git pull* command to get fresh code from your GitHub repository.
-	* Use *git push* command to push new code to your GitHub repository.
+3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository. Git has three main commands:
+	* *git clone* is the command for creating a local copy of the source code from a GitHub repository.
+	* *git pull* is the command for pulling fresh code from a GitHub repository.
+	* *git push* is the command for pushing new code to a GitHub repository.
 
-4. Launch a terminal and clone your GitHub repository to create a local copy of your banking application:
+4. Launch a terminal and clone your GitHub repository *ICp-banking-microservices* to create a local copy of your banking application:
 
    `git clone https://github.com/YOUR_USERNAME/ICp-banking-microservices`
     
@@ -287,9 +291,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
 	![alt text](images/icp_banking_configuration.png "Banking service configuration")
-	* Fill the release name with *banking-application-YOUR_USERNAME*.
+	* Fill the release name with *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
 	* Set the default namespace to *default*.
-	* Fill Image repository to your Docker image called *banking-application-YOUR_USERNAME*.
+	* Fill Image repository to your Docker image called *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
