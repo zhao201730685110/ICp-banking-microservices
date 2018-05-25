@@ -159,7 +159,14 @@ The objective is to discover the banking application located in the *banking-app
 	*	[Node.js](https://nodejs.org/en/): Node.js is a javascript application server and will run the banking application.
 	* 	[npm](https://www.npmjs.com/get-npm): npm resolves Node.js package dependencies. According to your operating system, npm may be distributed with Node.js.
 
-2. Launch a terminal. Go to your repository root folder:
+3. Launch a terminal and test if Node.Js and npm are installed in your operating system.
+	
+	![alt text](images/node-npm-test.png "npm node test command")
+	* Run the command *node -v*.
+	* Run the command *npm -v*.
+
+
+3. Launch a terminal. Go to your repository root folder:
 
     `cd YOUR_REPOSITORY_NAME`
 
@@ -167,18 +174,18 @@ The objective is to discover the banking application located in the *banking-app
 
     `node banking-application/app.js`
 
-3. Launch a web browser and go to **localhost:3000**. The banking application appears.
+4. Launch a web browser and go to **localhost:3000**. The banking application appears.
     
 	![alt text](images/banking_app.png "Banking application")
 
-4. Test your application.
+5. Test your application.
 
 	![alt text](images/banking_app_test.png "Banking application")
     * Select a customer ID.
     * Please wait while the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
     * The result is displayed in a JSON structure.
     
-4. The banking application locally works. Stop the Node.js server with a **SIGINT (CTRL+C)** from the terminal.
+6. The banking application locally works. Stop the Node.js server with a **SIGINT (CTRL+C)** from the terminal.
 
 
 ## Part 4 - Push the banking application to your GitHub repository
