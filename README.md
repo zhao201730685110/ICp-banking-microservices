@@ -241,11 +241,11 @@ Jenkins is an open source automation server. It helps automate the non-human par
 
 1. Connect to [Jenkins](http://148.100.92.185:8080/job/docker-build-icp/build?delay=0sec).
 
-2. Select values before building the Docker image:
+2. Change parameters before building the Docker image:
 
 	![alt text](images/jenkins_overview.png "Jenkins overview")
 	* Replace *GITHUB_USERNAME* with your own GitHub username, *YOUR_USERNAME*.
-	* Replace *GITHUB_REPOSITORY_NAME* with *ICp-banking-microservices*
+	* Make sure *GITHUB_REPOSITORY_NAME* is set *ICp-banking-microservices*
 
 3. Click **Build**.
 	
