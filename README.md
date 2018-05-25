@@ -76,7 +76,7 @@ The objective is to discover the banking application located in the *banking-app
 	* Create a password.
 	* Click **Sign up for GitHub**.
 	* Select the plan *Unlimited public repositories for free*.
-	* A Confirmation email has been sent. Verify your email address to collaborate in Github.
+	* A Confirmation email will be sent. Verify your email address to collaborate in Github.
 
 2. Fork the banking application from this GitHub repository to your own GitHub repository.
 
