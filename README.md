@@ -174,9 +174,9 @@ The objective is to discover the banking application located in the *banking-app
 	![alt text](images/npm-install.png "npm install")
 	* As a result, dependencies are installed in your project folder.
 
-5. Run the banking application `node banking-application/app.js` :
+5. Run the banking application using : `node banking-application/app.js` :
 	![alt text](images/node-app-js.png "node app.js")
-	* As a result, dependencies are installed in your project folder.
+	* As a result, The banking application is started.
 	
 
 
