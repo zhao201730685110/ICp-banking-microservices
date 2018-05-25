@@ -166,7 +166,7 @@ The objective is to discover the banking application located in the *banking-app
 	* Run the command *npm -v*. The version is displayed.
 
 
-3. Launch a terminal. Go to your repository root folder:
+3. In the same terminal. Go to your local repository root folder:
 
     `cd ICp-banking-microservices`
 
