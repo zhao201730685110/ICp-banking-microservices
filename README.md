@@ -200,7 +200,7 @@ The objective is to discover the banking application located in the *banking-app
 
    `git commit -m "Update of bankingAPI.js"`
 
-2. Push the code you commited to transfer the last commit to your GitHub repository:
+2. Push the code you commited to transfer the last commit to your GitHub repository *ICp-banking-microservices*:
 
    `git push"`
 
