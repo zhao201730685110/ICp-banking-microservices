@@ -82,8 +82,8 @@ The objective is to discover the banking application located in the *banking-app
 
 	![alt text](images/fork.png "Fork the banking app")
 	* Click **Fork**.
-	* Github automatically forks this project from this repository *IBM/ICp-banking-microservices* to your repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
-	* Discover your forked project (your fresh banking application) in your Github repository *YOUR_GITHUB_USERNAME/ICp-banking-microservices*.
+	* Github automatically forks this project from this repository *IBM/ICp-banking-microservices* to your repository *YOUR_USERNAME/ICp-banking-microservices*.
+	* Discover your forked project (your fresh banking application) in your Github repository *YOUR_USERNAME/ICp-banking-microservices*.
 
 3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository. Git has three main commands:
 	* *git clone* is the command for creating a local copy of the source code from a GitHub repository.
@@ -99,12 +99,12 @@ The objective is to discover the banking application located in the *banking-app
 5. Import the source code into your favorite IDE and take a look at the *banking-application* folder:
 
 	![alt text](images/banking_app_structure.png "Banking application")
-	* *app.js*: the Node.js application (server code).
-	* *public/index.html*: the banking application (client code).
-	* *public/css*: the banking application stylesheet.
-	* *public/js*: Javascript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
+	* *app.js*: the application server code.
+	* *public/index.html*: the application client code (banking dashboard).
+	* *public/css*: the application stylesheet.
+	* *public/js*: the JavaScript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
 	* *package.json*: the package dependency file.
-	* *Dockerfile*: file to build the docker file. it will be used later.
+	* *Dockerfile*: file to build the docker image. it will be used later (step 2).
 
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
 
