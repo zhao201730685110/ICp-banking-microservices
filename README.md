@@ -256,7 +256,7 @@ Jenkins is an open source automation server. It helps automate the non-human par
 
 	![alt text](images/jenkins_build_success.png "Jenkins build")
 
-5. Select your build then click **Console Ouptut** and **View As plain text** to display the build output
+5. Select your build then click **Console Ouptut** to display the build output
 	
 	![alt text](images/jenkins_build_details.png "Jenkins details")
 
