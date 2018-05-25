@@ -168,8 +168,7 @@ The objective is to discover the banking application located in the *banking-app
 
 3. In the same terminal. Go to your banking application folder:
 
-    `cd ICp-banking-microservices`
-    `cd banking-application`
+    `cd ICp-banking-microservices/banking-application`
 
 4. Install Node.Js package dependencies of the banking application using : `npm install package.json`
 	![alt text](images/npm-install.png "npm install")
