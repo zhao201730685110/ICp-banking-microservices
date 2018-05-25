@@ -166,13 +166,20 @@ The objective is to discover the banking application located in the *banking-app
 	* Run the command *npm -v*. The version is displayed.
 
 
-3. In the same terminal. Go to your local repository root folder:
+3. In the same terminal. Go to your banking application folder:
 
     `cd ICp-banking-microservices`
+    `cd banking-application`
 
-    - From the app root folder, launch the app:
+4. Install Node.Js package dependencies of the banking application using : `npm install package.json`
+	![alt text](images/npm-install.png "npm install")
+	* As a result, dependencies are installed in your project folder.
 
-    `node banking-application/app.js`
+5. Run the banking application `node banking-application/app.js` :
+	![alt text](images/node-app-js.png "node app.js")
+	* As a result, dependencies are installed in your project folder.
+	
+
 
 4. Launch a web browser and go to **localhost:3000**. The banking application appears.
     
