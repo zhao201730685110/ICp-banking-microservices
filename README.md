@@ -103,7 +103,7 @@ The objective is to discover the banking application located in the *banking-app
 	* *public/index.html*: the application client code (banking dashboard).
 	* *public/css*: the application stylesheet.
 	* *public/js*: the JavaScript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
-	* *package.json*: the package dependency file.
+	* *package.json*: the package dependencies file.
 	* *Dockerfile*: file to build the docker image. it will be used later (step 2).
 
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
@@ -168,7 +168,7 @@ The objective is to discover the banking application located in the *banking-app
 
 3. Launch a terminal. Go to your repository root folder:
 
-    `cd YOUR_REPOSITORY_NAME`
+    `cd ICp-banking-microservices`
 
     - From the app root folder, launch the app:
 
@@ -298,9 +298,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
 	![alt text](images/icp_banking_configuration.png "Banking service configuration")
-	* Fill the release name with *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
+	* Fill the release name with *YOUR_USERNAME-ICp-banking-microservices*.
 	* Set the default namespace to *default*.
-	* Fill Image repository to your Docker image called *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
+	* Fill Image repository to your Docker image called *YOUR_USERNAME-ICp-banking-microservices*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
