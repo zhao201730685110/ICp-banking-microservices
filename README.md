@@ -10,6 +10,7 @@ When you will complete this Code Pattern, you will understand how to:
 * Deploy a Docker image to IBM Cloud Private.
 * Run the existing application using the IBM Cloud Private catalog.
 
+
 # Architecture
 
 This journey accesses a fictitious retail banking system called MPLbank. MPLbank integrates an Account Management System running on IBM Mainframe. On top of this component, an API layer based on IBM API Connect has been set up to deliver a banking API. It makes banking services reachable through API from all kind of applications. IBM Cloud private has been configured into the LinuxOne LinuxONE Community Cloud.
