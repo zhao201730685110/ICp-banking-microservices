@@ -159,7 +159,7 @@ The objective is to discover the banking application located in the *banking-app
 	*	[Node.js](https://nodejs.org/en/): Node.js is a javascript application server and will run the banking application.
 	* 	[npm](https://www.npmjs.com/get-npm): npm resolves Node.js package dependencies. According to your operating system, npm may be distributed with Node.js.
 
-3. Launch a terminal and test if Node.Js and npm are installed in your operating system.
+3. Launch a terminal and test if Node.Js and npm are installed in your operating system and added to the system path:
 	
 	![alt text](images/node-npm-test.png "npm node test command")
 	* Run the command *node -v*.
