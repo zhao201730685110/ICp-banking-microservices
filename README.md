@@ -71,7 +71,7 @@ The objective is to discover the banking application located in the *banking-app
 1. Create a [GitHub account](https://github.com/).
 
 	![alt text](images/github_signup.png "Sign up")
-	* Pick a username.
+	* Pick a username. This will be referenced later as "YOUR_USERNAME"
 	* Enter an email.
 	* Create a password.
 	* Click **Sign up for GitHub**.
@@ -88,7 +88,7 @@ The objective is to discover the banking application located in the *banking-app
 
 4. Launch a terminal and clone your GitHub repository to create a local copy of your banking application:
 
-   `git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME`
+   `git clone https://github.com/YOUR_USERNAME/ICp-banking-microservices`
     
 	![alt text](images/clone.png "Clone the banking app")
 	
@@ -222,8 +222,8 @@ Jenkins is an open source automation server. It helps automate the non-human par
 2. Select values before building the Docker image:
 
 	![alt text](images/jenkins_overview.png "Jenkins overview")
-	* Replace *GITHUB_USERNAME* by your own GitHub username.
-	* Replace *GITHUB_REPOSITORY_NAME* by your own GitHub repository name
+	* Replace *GITHUB_USERNAME* with your own GitHub username, *YOUR_USERNAME*.
+	* Replace *GITHUB_REPOSITORY_NAME* with *ICp-banking-microservices*
 
 3. Click **Build**.
 	
