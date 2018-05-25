@@ -291,9 +291,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
 	![alt text](images/icp_banking_configuration.png "Banking service configuration")
-	* Fill the release name with *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
+	* Fill the release name with *YOUR_USERNAME-ICp-banking-microservices*.
 	* Set the default namespace to *default*.
-	* Fill Image repository to your Docker image called *GITHUB_USERNAME-GITHUB_REPOSITORY_NAME*.
+	* Fill Image repository to your Docker image called *YOUR_USERNAME-ICp-banking-microservices*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
