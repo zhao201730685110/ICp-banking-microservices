@@ -8,7 +8,7 @@ When you will complete this Code Pattern, you will understand how to:
 
 * Build a Docker image from an existing application.
 * Deploy a Docker image to IBM Cloud Private.
-* Use the catalog from IBM Cloud Private.
+* Run the existing application using the IBM Cloud Private catalog.
 
 # Architecture
 
