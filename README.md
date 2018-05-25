@@ -264,6 +264,7 @@ Jenkins is an open source automation server. It helps automate the non-human par
 	* Jenkins pulled your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
 	* Jenkins built the Docker image from the Docker file described before.
 	* The build action automatically added the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. Your banking application is now ready to be instantiated from the ICp catalog.
+	* At the end of the build output, check the line "Successfully tagged YOUR_USERNAME-icp-banking-microservices:latest". This is your docker image name and will be refered as "YOUR_IMAGE_NAME".
 
 ---
 
@@ -309,9 +310,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
 	![alt text](images/icp_banking_configuration.png "Banking service configuration")
-	* Fill the release name with *YOUR_USERNAME-ICp-banking-microservices*.
+	* Fill the release name with *YOUR_USERNAME*.
 	* Set the default namespace to *default*.
-	* Fill Image repository to your Docker image called *YOUR_USERNAME-ICp-banking-microservices*.
+	* Fill Image repository with your Docker image name, *YOUR_IMAGE_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
