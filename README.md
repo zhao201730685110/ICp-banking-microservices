@@ -217,7 +217,7 @@ The objective is to discover the banking application located in the *banking-app
 
 # Step 2 - Build and deploy a docker image to IBM Cloud private
 
-The objective is to build a docker image from the banking application and then deploy it to the IBM Cloud private.
+The objective is to build a Docker image from the banking application and then deploy it to the IBM Cloud private.
 
 ## Part 1 - Build the Docker image
 
