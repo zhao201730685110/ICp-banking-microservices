@@ -287,7 +287,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	![alt text](images/icp_select_catalog.png "ICp catalog")
 	* Click on **Catalog** then **Helm Charts**.
 
-4. Filter the diplayed Helm Charts to view the Code Pattern custom Chart.
+4. Filter the diplayed Helm Charts to view the *icp-banking-microservices* custom Chart.
 
 	![alt text](images/icp_catalog.png "ICp catalog")
 	* Click on **Filter**
