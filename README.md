@@ -90,7 +90,7 @@ The objective is to discover the banking application located in the *banking-app
 	* *git pull* is the command for pulling fresh code from a GitHub repository.
 	* *git push* is the command for pushing new code to a GitHub repository.
 
-4. Launch a terminal and clone your GitHub repository to create a local copy of your banking application:
+4. Launch a terminal and clone your GitHub repository *ICp-banking-microservices* to create a local copy of your banking application:
 
    `git clone https://github.com/YOUR_USERNAME/ICp-banking-microservices`
     
