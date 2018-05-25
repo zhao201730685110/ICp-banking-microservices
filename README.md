@@ -161,7 +161,7 @@ The objective is to discover the banking application located in the *banking-app
 
 2. Launch a terminal. Go to your repository root folder:
 
-    `cd YOUR_REPOSITORY_NAME`
+    `cd ICp-banking-microservices`
 
     - From the app root folder, launch the app:
 
