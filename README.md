@@ -277,6 +277,11 @@ Jenkins is an open source automation server. It helps automate the non-human par
 The objective is to discover the IBM Cloud private catalog in order to instantiate a container from your Docker image containing your banking application. In this way, you will be able to test your banking application from ICp.
 
 ## Part 1 - Discover the Helm chart from the calalog
+
+1. Subscribe to the IBM Cloud Private hosted in the Linux One Community Cloud
+![alt text](images/0.18C.gif "ICP subscription")
+    * Click **Try Container**
+
 1. Login to the [IBM Cloud private catalog] () and fill credentials:
 	
 	![alt text](images/icp_login.png "ICP Login")
