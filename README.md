@@ -281,6 +281,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 1. Subscribe to the IBM Cloud Private hosted in the Linux One Community Cloud
 ![alt text](images/0.18C.gif "ICP subscription")
     * Click **Try Container**
+    * Fill the form and register to ICP
 
 1. Login to the [IBM Cloud private catalog] () and fill credentials:
 	
