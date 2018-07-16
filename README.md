@@ -240,25 +240,22 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 In this Code Pattern, An automatic deployment process has been set up in the ICp Worker Node on Linux on Z. First, it automatically builds a Docker image from a GitHub repository with a DevOps approach. Then, it deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
 
-1. Copy and Paste the URL into your browser : http://148.100.93.200:20002/deploy/GITHUB_USERNAME
-
-2. Change the path parameter before building the Docker image:
+1. Copy and Paste this URL into your browser address bar **and** replace *GITHUB_USERNAME* to your username : http&#58;//148.100.93.200:20002/deploy/GITHUB_USERNAME
 
 	![alt text](images/deployment-githubname-replace.png "deployment")
-	* Replace *GITHUB_USERNAME* with your own GitHub username, *YOUR_USERNAME*.
 	
-3. Click **Enter**. The deployment is processing : 
+2. Click **Enter**. The deployment is processing : 
 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
 	* The process builds the Docker image from the Docker file described before. 
 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
 	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
 	
-4. Wait for the successful completion of your build:
+3. Wait for the successful completion of your build:
 
 	![alt text](images/deployment-githubname.png "deployment")
 
 
-6.  Your banking application is now ready to be instantiated from the ICp catalog.
+4.  Your banking application is now ready to be instantiated from the ICp catalog.
 
 ---
 
