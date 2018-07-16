@@ -297,12 +297,12 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 1. Select your banking microservice to prepare your container.
 
-	![alt text](images/icp-banking-microservices-configuration.png "ICp catalog")
+	![alt text](images/icp-banking-microservices-config.png "ICp catalog")
 	* Click **Configure**.
 
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
-	![alt text](images/icp-banking-microservices-configured.png "Banking service configuration")
+	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select the default namespace to *codepatterns*.
 	* Fill Image repository with your Docker image name, *YOUR_IMAGE_NAME*.
