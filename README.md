@@ -251,18 +251,13 @@ In this Code Pattern, An automatic deployment process has been set up in the ICp
 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
 	* The process builds the Docker image from the Docker file described before. 
 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. The Docker image is tagged YOUR_USERNAME-icp-banking-microservices:latest. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
-	* Your banking application is now ready to be instantiated from the ICp catalog.
 	
 4. Wait for the successful completion of your build:
 
 	![alt text](images/deployment-githubname.png "deployment")
 
 
-6.  Read the build output to understand how the Jenkins build has been executed:
-	* Jenkins pulled your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
-	* Jenkins built the Docker image from the Docker file described before.
-	* The build action automatically added the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. Your banking application is now ready to be instantiated from the ICp catalog.
-	* At the end of the build output, check the line "Successfully tagged YOUR_USERNAME-icp-banking-microservices:latest". This is your docker image name and will be refered as "YOUR_IMAGE_NAME".
+6.  Your banking application is now ready to be instantiated from the ICp catalog.
 
 ---
 
