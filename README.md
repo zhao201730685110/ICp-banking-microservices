@@ -313,9 +313,10 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	
 
 ## Part 3 - Access your banking microservice
-1. From the Helm release view, click on **Launch** 
+1. From the Helm release view, the container details are displayed.
 
 	![alt text](images/run-app-icp.png "Banking service configuration")
+	* Click on **Launch** to display the banking microservice.
 
 
 2. Test your application:
