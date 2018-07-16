@@ -235,7 +235,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	* *EXPOSE 3000*: This command tells docker to map the image's port 3000 to the operating system's port 3000. It will gives us a network access to the docker image and thus the Node.js app.
 	* *CMD ["npm", "start"]*: This last command tells Docker what to do when we launch the image, in our case **npm start**, which will start the Node.js app.
 
-## Part 2 -  Deploy the docker image to IBM Cloud private
+## Part 2 - Deploy the docker image to IBM Cloud private
 
 
 In this Code Pattern, An automatic deployment process has been set up in the ICp Worker Node on Linux on Z. First, it automatically builds a Docker image from a GitHub repository with a DevOps approach. Then, it deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
@@ -339,8 +339,6 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-# Troubleshooting
-# Privacy Notice
 # Links
 
 * [IBM Cloud private](https://www.ibm.com/cloud/private)
