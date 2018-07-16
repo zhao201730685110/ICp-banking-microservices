@@ -237,28 +237,22 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 ## Part 2 -  Deploy the docker image to IBM Cloud private
 
-Jenkins is an open source automation server. It helps automate the non-human part of the software development process with continuous integration, and facilitates technical aspects of continuous delivery. It supports version control system, including Git, and can execute shell scripts. In this Code Pattern, Jenkins has been set up in the ICp Worker Node on Linux on Z. It is used to automatically build a Docker image from a GitHub repository with a DevOps approach. Then, Jenkins deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
 
-1. Connect to [Jenkins](http://148.100.92.185:8080/job/docker-build-icp/build?delay=0sec).
+In this Code Pattern, An automatic deployment process has been set up in the ICp Worker Node on Linux on Z. First, it automatically builds a Docker image from a GitHub repository with a DevOps approach. Then, it deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
 
-2. Change parameters before building the Docker image:
+1. Copy and Paste the URL into your browser : http://148.100.93.200:20002/deploy/GITHUB_USERNAME
 
-	![alt text](images/jenkins_overview.png "Jenkins overview")
+2. Change the path parameter before building the Docker image:
+
+	![alt text](images/deployment-githubname-replace.png "deployment")
 	* Replace *GITHUB_USERNAME* with your own GitHub username, *YOUR_USERNAME*.
-	* Make sure *GITHUB_REPOSITORY_NAME* is set *ICp-banking-microservices*
-
-3. Click **Build**.
 	
-	![alt text](images/jenkins_build_inprogress.png "Jenkins build in progress")
-	* A new build has been submitted into Jenkins and is in progress.
-
+3. Click **Enter**.
+	
 4. Wait for the successful completion of your build:
 
-	![alt text](images/jenkins_build_success.png "Jenkins build")
+	![alt text](images/deployment-githubname.png "deployment")
 
-5. Select your build then click **Console Ouptut** to display the build output
-	
-	![alt text](images/jenkins_build_details.png "Jenkins details")
 
 6.  Read the build output to understand how the Jenkins build has been executed:
 	* Jenkins pulled your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
