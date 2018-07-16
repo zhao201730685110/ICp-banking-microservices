@@ -346,8 +346,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 # Privacy Notice
 # Links
 
-[IBM Cloud private](https://www.ibm.com/cloud/private)
-[IBM Cloud private - Knowledge Center](https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html)
+* [IBM Cloud private](https://www.ibm.com/cloud/private)
+* [IBM Cloud private - Knowledge Center](https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html)
 
 [IBM ID]: https://www.ibm.com/account/us-en/signup/register.html
 [API Developer Portal]: https://developer-contest-spbodieusibmcom-prod.developer.us.apiconnect.ibmcloud.com/
