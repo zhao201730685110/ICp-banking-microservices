@@ -313,13 +313,12 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	
 
 ## Part 3 - Access your banking microservice
-1. Click on the only **deployment** available 
+1. From the Helm release view, click on **Launch** 
 
-2. Select **access http** under the **Expose details** panel and enjoy your new app!
+	![alt text](images/run-app-icp.png "Banking service configuration")
 
-	![alt text](images/banking_app.png "Banking application")
 
-4. Test your application:
+2. Test your application:
 	![alt text](images/banking_app_test.png "Banking application")
     * Select a customer ID.
     * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
