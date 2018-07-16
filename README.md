@@ -276,39 +276,32 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
     * Click **Try Container**
     * Fill the form and register to ICP
 
-1. Login to the [IBM Cloud private catalog] () and fill credentials:
+2. Login to the [IBM Cloud private catalog] () and fill credentials:
 	
 	![alt text](images/icp_login.png "ICP Login")
     * Replace the username: `****`
     * Replace the password: `****`
 
-3. Click the top-left icon then go to the catalog from the menu.
+3. Click the top-right icon  from the menu to access the catalog.
 
-	![alt text](images/icp_select_catalog.png "ICp catalog")
-	* Click on **Catalog** then **Helm Charts**.
+	![alt text](images/icp_catalog-users.png "ICp catalog")
+	* Click on **Catalog**
 
-4. Filter the diplayed Helm Charts to view the *icp-banking-microservices* custom Chart.
+4. Click on the Helm Chart called **openmplbank - Banking dashboard** to see the overview of the this banking microservice.
 
-	![alt text](images/icp_catalog.png "ICp catalog")
-	* Click on **Filter**
-	* Check **local-charts** to display customized charts.
+	![alt text](images/icp-banking-microservices.png "ICp catalog")
 
-5. Click on the Helm Chart called **Banking Application** to see the overview of the this banking microservice.
-
-	![alt text](images/icp_catalog_local.png "ICp catalog")
-
-	![alt text](images/icp_banking_detail.png "ICp catalog")
 
 ## Part 2 - Configure and install your banking microservice
 
 1. Select your banking microservice to prepare your container.
 
-	![alt text](images/icp_banking_detail.png "ICp catalog")
+	![alt text](images/icp-banking-microservices-configure.png "ICp catalog")
 	* Click **Configure**.
 
 2. Configure the banking microservice to instantiate a container from your Docker image built in the previous step:
 
-	![alt text](images/icp_banking_configuration.png "Banking service configuration")
+	![alt text](images/icp-banking-microservices-configured.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME*.
 	* Set the default namespace to *default*.
 	* Fill Image repository with your Docker image name, *YOUR_IMAGE_NAME*.
