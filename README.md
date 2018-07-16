@@ -277,7 +277,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
     * Click **Try Container**
     * Fill the form and register to ICP
 
-2. Login to the [IBM Cloud private catalog] (https://148.100.92.200:8443/console/welcome) and fill credentials:
+2. Login to the [IBM Cloud private catalog](https://148.100.92.200:8443/console/welcome) and fill credentials:
 	
 	![alt text](images/icp_login.png "ICP Login")
     * Replace the username: `****`
