@@ -284,7 +284,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 3. Click the top-right icon  from the menu to access the catalog.
 
-	![alt text](images/icp_catalog-users.png "ICp catalog")
+	![alt text](images/icp-catalog-users.png "ICp catalog")
 	* Click on **Catalog**
 
 4. Click on the Helm Chart called **openmplbank - Banking dashboard** to see the overview of the this banking microservice.
