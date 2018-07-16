@@ -320,7 +320,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 
 2. Test your application:
-	![alt text](images/banking_app_test.png "Banking application")
+	![alt text](images/icp-banking-app-test.png "Banking application")
     * Select a customer ID.
     * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
     * The result is displayed in a JSON structure.
