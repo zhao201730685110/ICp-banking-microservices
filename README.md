@@ -309,6 +309,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
+	![alt text](images/icp-view-helm-release.png "Banking service configuration")
+	
+
 ## Part 3 - Access your banking microservice
 1. Click on the only **deployment** available 
 
