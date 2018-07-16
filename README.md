@@ -338,6 +338,10 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 ---
 
+# Licence
+
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
 # Troubleshooting
 # Privacy Notice
 # Links
