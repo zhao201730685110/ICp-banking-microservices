@@ -240,7 +240,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 In this Code Pattern, An automatic deployment process has been set up in the ICp Worker Node on Linux on Z. First, it automatically builds a Docker image from a GitHub repository with a DevOps approach. Then, it deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
 
-1. Copy and Paste this URL into your browser address bar **and** replace *GITHUB_USERNAME* with your username : http&#58;//148.100.93.200:20002/deploy/GITHUB_USERNAME
+1. Copy and Paste this URL into your browser address bar **and** replace *GITHUB_USERNAME* with your username : `http://148.100.93.200:20002/deploy/GITHUB_USERNAME`
 
 	![alt text](images/deployment-githubname-replace.png "deployment")
 	
