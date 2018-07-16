@@ -320,10 +320,17 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 
 2. Test your application:
+	
 	![alt text](images/icp-banking-app-test.png "Banking application")
     * Select a customer ID.
     * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
     * The result is displayed in a JSON structure.
+
+3. From the Helm Release view, Delete your banking microservice after use.
+
+	![alt text](images/icp-delete-banking-app.png "Banking application")
+	* Click on **Action** then **Delete**.
+   
 
 ---
 
