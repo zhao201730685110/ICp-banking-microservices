@@ -241,10 +241,9 @@ In this Code Pattern, an automatic deployment process has been initially set up 
 
 The deployment has been processed as follow :
 
-	* The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
-	* The process built the Docker image from the Docker file described before. 
-	* The build action automatically added the Docker image to the Docker image repository of ICp. 
-	* The Docker image has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME". 
+1. The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
+2. The process built the Docker image from the Docker file described before. It has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME" in this pattern.
+3. The process deployed the Docker image to the Docker image repository of ICp.
 	
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
