@@ -237,25 +237,15 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
+In this Code Pattern, an automatic deployment process has been initially set up to deploy the Docker image to ICp. 
 
-In this Code Pattern, An automatic deployment process has been set up in the ICp Worker Node on Linux on Z. First, it automatically builds a Docker image from a GitHub repository with a DevOps approach. Then, it deploys the Docker image to the Docker repository of the ICp Worker Node based on Linux on Z.
-
-1. Copy and Paste this URL into your browser address bar **and** replace *GITHUB_USERNAME* with your username : `http://148.100.93.200:20002/deploy/GITHUB_USERNAME`
-
-	![alt text](images/deployment-githubname-replace.png "deployment")
+The deployment has been processed as follow : 
+	* The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
+	* The process built the Docker image from the Docker file described before. 
+	* The build action automatically added the Docker image to the Docker image repository of ICp. 
+	* The Docker image has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME". 
 	
-2. Click **Enter**. The deployment is processing : 
-	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
-	* The process builds the Docker image from the Docker file described before. 
-	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
-	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
-	
-3. Wait for the successful completion of your build:
-
-	![alt text](images/deployment-githubname.png "deployment")
-
-
-4.  Your banking application is now ready to be instantiated from the ICp catalog.
+As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
 ---
 
@@ -302,7 +292,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select the default namespace to *codepatterns*.
-	* Fill Image repository with your Docker image name, *YOUR_IMAGE_NAME*.
+	* Fill Image repository with your Docker image name, *DOCKER_IMAGE_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
 
