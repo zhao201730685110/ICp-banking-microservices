@@ -239,7 +239,8 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 In this Code Pattern, an automatic deployment process has been initially set up to deploy the Docker image to ICp. 
 
-The deployment has been processed as follow : 
+The deployment has been processed as follow :
+
 	* The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
 	* The process built the Docker image from the Docker file described before. 
 	* The build action automatically added the Docker image to the Docker image repository of ICp. 
