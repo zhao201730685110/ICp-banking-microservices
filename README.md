@@ -202,7 +202,7 @@ The objective is to discover the banking application located in the *banking-app
 
 2. Push the code you commited to transfer the last commit to your GitHub repository *ICp-banking-microservices*:
 
-   `git push"`
+   `git push`
 
 3. Go back to your online Github repository *ICp-banking-microservices* using the web browser. 
 
