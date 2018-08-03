@@ -237,13 +237,15 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
-In this Code Pattern, an automatic deployment process has been initially set up to deploy the Docker image to ICp. 
+In this Code Pattern, an automatic deployment process (Jenkins build) has been initially set up to deploy the Docker image to ICp. 
+
+![alt text](images/devops.png "DevOps")
 
 The deployment has been processed as follow :
 
-1. The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
-2. The process built the Docker image from the Docker file described before. It has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME" in this pattern.
-3. The process deployed the Docker image to the Docker image repository of ICp.
+1. Jenkins pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
+2. Jenkins built the Docker image from the Docker file described before. It has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME" in this pattern.
+3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
 	
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
