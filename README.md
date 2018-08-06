@@ -294,8 +294,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
-	* Select the available namespace in the list.
-	* Fill Image repository with your Docker image name, *DOCKER_IMAGE_NAME*.
+	* Select the available target namespace in the list.
+	* Fill Image repository with the Docker image name, *DOCKER_IMAGE_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**.
 
