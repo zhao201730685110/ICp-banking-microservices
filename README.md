@@ -71,7 +71,7 @@ The objective is to discover the banking application located in the *banking-app
 1. Create a [GitHub account](https://github.com/).
 
 	![alt text](images/github_signup.png "Sign up")
-	* Pick a username. This will be referenced later as "YOUR_USERNAME"
+	* Pick a username. This will be referenced later as "YOUR_USERNAME".
 	* Enter an email.
 	* Create a password.
 	* Click **Sign up for GitHub**.
@@ -263,9 +263,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 1. Subscribe to the [IBM Cloud Private hosted in the Linux One Community Cloud](https://developer.ibm.com/linuxone/home-l1cc30-test/)
 ![alt text](images/0.18C.gif "ICP subscription")
-    * Click **Try Container**
-    * Fill the form and register to ICP
-    * Activate your account when you will receive the confirmation email
+    * Click **Try Container**.
+    * Fill the form and register to ICP.
+    * Activate your account when you will receive the confirmation email.
 
 2. Login to the [IBM Cloud private catalog](https://148.100.92.200:8443/console/welcome) and fill credentials with yours:
 	
@@ -276,7 +276,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 3. Click the top-right icon  from the menu to access the catalog.
 
 	![alt text](images/icp-catalog-users.png "ICp catalog")
-	* Click on **Catalog**
+	* Click on **Catalog**.
 
 4. Click on the Helm Chart called **openmplbank - Banking dashboard** to see the overview of the this banking microservice.
 
@@ -297,7 +297,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	* Select the available namespace in the list.
 	* Fill Image repository with your Docker image name, *DOCKER_IMAGE_NAME*.
 
-3. Click the **Install** button. When the process is finished, click **View Helm Release**
+3. Click the **Install** button. When the process is finished, click **View Helm Release**.
 
 	![alt text](images/icp-view-helm-release.png "Banking service configuration")
 	
