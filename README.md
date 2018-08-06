@@ -270,8 +270,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Login to the [IBM Cloud private catalog](https://148.100.92.200:8443/console/welcome) and fill credentials with yours:
 	
 	![alt text](images/icp_login.png "ICP Login")
-    * Replace the username by your email  
-    * Replace the password by your password
+    * Replace the username by your email.
+    * Replace the password by your password.
 
 3. Click the top-right icon  from the menu to access the catalog.
 
@@ -294,7 +294,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
-	* Select the namespace.
+	* Select the available namespace in the list.
 	* Fill Image repository with your Docker image name, *DOCKER_IMAGE_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
@@ -314,13 +314,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	![alt text](images/icp-banking-app-test.png "Banking application")
     * Select a customer ID.
     * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
-    * The result is displayed in a JSON structure.
-
-3. From the Helm Release view, Delete your banking microservice after use.
-
-	![alt text](images/icp-delete-banking-app.png "Banking application")
-	* Click on **Action** then **Delete**.
-   
+    * The result is displayed in a JSON structure.   
 
 ---
 
