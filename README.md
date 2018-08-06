@@ -314,7 +314,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	![alt text](images/icp-banking-app-test.png "Banking application")
     * Select a customer ID.
     * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
-    * The result is displayed in a JSON structure.   
+    * The result is displayed in a JSON structure.
+    
+3. Your account is available for 24 hours. All your containers will removed when your account will expire.
 
 ---
 
