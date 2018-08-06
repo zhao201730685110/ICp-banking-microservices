@@ -244,7 +244,7 @@ In this Code Pattern, an automatic process (Jenkins build) has been initially se
 The Jenkins build processed as follow :
 
 1. Jenkins pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
-2. Jenkins built the Docker image from the Docker file described before. It has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME" in this pattern.
+2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as *DOCKER_IMAGE_NAME* in this pattern.
 3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
 	
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
@@ -270,8 +270,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Login to the [IBM Cloud private catalog](https://148.100.92.200:8443/console/welcome) and fill credentials with yours:
 	
 	![alt text](images/icp_login.png "ICP Login")
-    * Replace the username: `****`  
-    * Replace the password: `****`
+    * Replace the username by your email  
+    * Replace the password by your password
 
 3. Click the top-right icon  from the menu to access the catalog.
 
@@ -294,7 +294,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
-	* Select the default namespace to *codepatterns*.
+	* Select the namespace.
 	* Fill Image repository with your Docker image name, *DOCKER_IMAGE_NAME*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**
