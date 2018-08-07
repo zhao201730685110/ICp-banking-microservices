@@ -251,7 +251,7 @@ As a result, the banking application is now ready to be instantiated from the IC
 
 ---
 
-:thumbsup: Congratulations! Your banking application has been packaged into a Docker image using a DevOps approach! Ready to use it from IBM Cloud private?
+:thumbsup: Congratulations! Your banking application has been packaged into a Docker image using a DevSecOps approach! Ready to use it from IBM Cloud private?
 
 ---
 
