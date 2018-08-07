@@ -17,10 +17,10 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 ![alt text](images/architecture_pattern.png "Architecture")
 
-1. The user deploys the application based microservice on the Worker Node on Linux on Z using IBM Cloud Private.
-2. The user installs and runs an instance of his microservice from IBM Cloud Private. The application calls a banking API published in API Connect.
+1. The user deploys a docker image (banking application based microservice) to the IBM Cloud Private docker registry.
+2. The user configures and runs a container based on the previous docker image from IBM Cloud Private catalog. Once started, the application calls banking APIs published in API Connect.
 3. API Connect calls the back-end Z Mainframe through a banking API published in z/OS Connect EE.
-4. z/OS Connect EE calls the Account Management System (AMS) running in CICS. A COBOL program processes the request and returns banking data. Finally, banking data are sent back to microservice application in the Worker Node on Linux on Z.
+4. z/OS Connect EE calls the Account Management System (AMS) running in CICS. A COBOL program processes the request and returns banking data. Finally, banking data are sent back to the microservice application.
 
 
 # Included components
@@ -57,7 +57,7 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 ### Step 3 - Instantiate the banking microservice from the IBM Cloud private catalog
 
 - [Part 1 - Discover the Helm chart from the calalog](#part-1---discover-the-helm-chart-from-the-calalog)
-- [Part 2 - Configure and install your banking microservice](#part-2---configure-and-install-your-banking-microservice)
+- [Part 2 - Configure and install your banking microservice](#part-2---configure-and-install-your--microservice)
 - [Part 3 - Access your banking microservice](#part-3---access-your-banking-microservice)
 
 ---
