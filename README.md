@@ -148,7 +148,7 @@ The objective is to discover the banking application located in the *banking-app
 	* Select the App that you have just created before.
 	* Click **Subscribe**.
 	
-8. Modify the *banking-application/js/bankingAPI.js* in your banking application.
+8. Modify the *banking-application/public/js/bankingAPI.js* in your banking application.
 	![alt text](images/client_id_secret.png "javascript code")
 	* Replace *YOUR_CLIENT_ID_HERE* by your client ID value from the IBM API developer portal.
 	* Replace *YOUR_CLIENT_SECRET_HERE* by your client Secret value from the IBM API developer portal.
@@ -170,7 +170,7 @@ The objective is to discover the banking application located in the *banking-app
 
     `cd ICp-banking-microservices/banking-application`
 
-4. Install Node.Js package dependencies of the banking application using : `npm install package.json`
+4. Install Node.Js package dependencies of the banking application using : `npm install`
 	![alt text](images/npm-install.png "npm install")
 	* As a result, dependencies are installed in your project folder.
 
@@ -244,7 +244,7 @@ In this Code Pattern, an automatic process (Jenkins build) has been initially se
 The Jenkins build processed as follow :
 
 1. Jenkins pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
-2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as *DOCKER_IMAGE_NAME* in this pattern.
+2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*.
 3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
 	
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
@@ -295,7 +295,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select the available target namespace in the list.
-	* Fill Image repository with the Docker image name, *DOCKER_IMAGE_NAME*.
+	* Fill Image repository with the Docker image name, *cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices*.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**.
 
