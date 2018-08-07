@@ -293,7 +293,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 2. Configure the container:
 
 	![alt text](images/icp-banking-microservices-configuration.png "Banking service configuration")
-	* Fill the release name with **YOUR_USERNAME** (limit of 30 characters).
+	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select an available target namespace in the list.
 	* Fill the image repository with the Docker image defined before: **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices**.
 
