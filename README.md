@@ -1,4 +1,4 @@
-# Create and deploy a financial microservice on IBM Z using IBM Cloud Private to drive DevSecOps on LinuxOne 
+# Build and deploy a financial microservice on IBM Z using IBM Cloud Private 
 
 In this Code Pattern, you will learn how to build and deploy a banking microservice with IBM Cloud private running in the LinuxONE Community Cloud. 
 
