@@ -225,12 +225,16 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 1. Create your Linux on Z to build the docker image from the LinuxOne Community Cloud following the [irtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
 
-	* You will request access to LinuxONE Community Cloud.
-	* You will make a first time setup.
-	* You will deploy your LinuxONE virtual server.
-	* You will log in to your LinuxONE virtual server using SSH.r
+	1. You will request access to LinuxONE Community Cloud.
+	2. You will make a first time setup.
+	3. You will deploy your LinuxONE virtual server.
+	4. You will log in to your LinuxONE virtual server using SSH.
+	
+2. Clone your source from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your Linux :
 
-1. Take a look at the *banking-application/Dockerfile*:
+	`git clone YOUR_USERNAME/ICp-banking-microservices`
+
+3. Take a look at the *ICp-banking-microservices/banking-application/Dockerfile* file:
 
 	![alt text](images/dockerfile.png "Dockerfile")
 	* *FROM ibmcom/ibmnode*: This command gathers, from IBM's public Docker repository, a Ubuntu Linux image containing all the basic components to run a Node.js application. It will be used as a basis for our usecase. 
@@ -241,6 +245,12 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	* *ENV NODE_ENV production* and *ENV PORT 3000*: These two commands set environment variables. The first one tells our Node.js instance that we run in production mode, and thus don't need development libraries. The other one sets the port 3000 as our main networking port.
 	* *EXPOSE 3000*: This command tells docker to map the image's port 3000 to the operating system's port 3000. It will gives us a network access to the docker image and thus the Node.js app.
 	* *CMD ["npm", "start"]*: This last command tells Docker what to do when we launch the image, in our case **npm start**, which will start the Node.js app.
+	
+4. Build your docker image:
+
+	`docker build -t "YOUR_USERNAME-banking-image:latest" .`
+	
+5. As a result, a docker image is created based on your Docker file and your source code pulled from Github.
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
