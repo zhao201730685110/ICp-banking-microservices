@@ -223,6 +223,13 @@ The objective is to build a Docker image from the banking application and then d
 
 Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build, users can create an automated build that executes several command-line instructions, step by step.
 
+1. Create your Linux on Z to build the docker image from the LinuxOne Community Cloud following the [irtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
+
+	* You will request access to LinuxONE Community Cloud.
+	* You will make a first time setup.
+	* You will deploy your LinuxONE virtual server.
+	* You will log in to your LinuxONE virtual server using SSH.r
+
 1. Take a look at the *banking-application/Dockerfile*:
 
 	![alt text](images/dockerfile.png "Dockerfile")
