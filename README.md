@@ -250,9 +250,11 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	
 4. Build your docker image:
 
-	`docker build -t "YOUR_USERNAME-banking-image:latest" .`
+	`sudo docker build -t "YOUR_USERNAME-banking-image:latest" .`
 	
-5. As a result, a docker image is created based on your Docker file and your source code pulled from Github.
+5. As a result, a docker image is created based on your Docker file and your source code pulled from Github :
+
+	`sudo docker images`
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
