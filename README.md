@@ -236,8 +236,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 3. Take a look at the *ICp-banking-microservices/banking-application/Dockerfile* file:
 
-	`cd ICp-banking-microservices/banking-application`
-	`cat Dockerfile`
+	`cat ICp-banking-microservices/banking-application/Dockerfile`
 
 	![alt text](images/dockerfile.png "Dockerfile")
 	* *FROM ibmcom/ibmnode*: This command gathers, from IBM's public Docker repository, a Ubuntu Linux image containing all the basic components to run a Node.js application. It will be used as a basis for our usecase. 
