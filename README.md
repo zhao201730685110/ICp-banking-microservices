@@ -316,15 +316,15 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 ## Part 1 - Discover the Helm chart from the calalog
 
-1. Subscribe to the [Linux One Community Cloud](https://developer.ibm.com/linuxone/home-l1cc30-test/)
-![alt text](images/0.18C.gif "ICP subscription")
+1. Subscribe to [IBM Cloud private in the Linux One Community Cloud](https://developer.ibm.com/linuxone/home-l1cc30-test/)
+![alt text](images/0.18C.gif "ICp subscription")
     * Click **Try Container**.
     * Fill the form and register to the Linux One Community Cloud.
     * Activate your account when you will receive the confirmation email.
 
 2. Login to the [IBM Cloud private catalog](https://148.100.92.200:8443/console/welcome) and fill credentials with yours:
 	
-	![alt text](images/icp_login.png "ICP Login")
+	![alt text](images/icp_login.png "ICp Login")
     * Replace the username by your email.
     * Replace the password by your password.
 
