@@ -268,11 +268,11 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	
 4. Launch a web browser and go to **YOUR_LINUX_IP:3000**. The banking application appears.
     
-	![alt text](images/banking_app.png "Banking application")
+	![alt text](images/linux1CC-banking_app.png "Banking application")
 
 5. Test your application.
 
-	![alt text](images/banking_app_test.png "Banking application")
+	![alt text](images/linux1CC-banking-app-test.png "Banking application")
     * Select a customer ID.
     * Please wait while the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
     * The result is displayed in a JSON structure.
