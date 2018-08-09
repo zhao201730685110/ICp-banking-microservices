@@ -274,8 +274,6 @@ The Jenkins build processed as follow:
 2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*.
 3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
 	
-As a result, the banking application is now ready to be instantiated from the ICp catalog.
-
 > NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, you are authorized to practice this deployment. Otherwise, go to the next step:**
 >
 > 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME` 
@@ -285,13 +283,14 @@ As a result, the banking application is now ready to be instantiated from the IC
 >
 > 5. Click **Enter**. The deployment is processing : 
 > 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
-> 	* The process builds the Docker image from the Docker file described before. 
-> 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
-> 	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
->	
-> 6. Wait for the successful completion of your build: **Deployment successful**
+> 	* The process builds the Docker image from the Docker file described before. It has been called **YOUR_USERNAME-icp-banking-microservices** and tagged *lastest*. It will be refered as **YOUR_IMAGE_NAME**. 
+> 	* The process connects to ICp and then deploys the Docker image to its Docker image repository.
+> 	
+> 6. Wait for the successful completion message of your build: **Deployment successful**
 >
-> As a result, the banking application is now ready to be instantiated from the ICp catalog.
+
+As a result, the banking application is now ready to be instantiated from the ICp catalog.
+
 
 ---
 
@@ -342,7 +341,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select an available target namespace in the list.
 	* The image repository is already filled with the Docker image defined before: **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices**.
-	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, fill the The image repository with your YOUR_IMAGE_NAME.
+	
+	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, fill the image repository with your **YOUR_IMAGE_NAME**.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**.
 
