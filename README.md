@@ -223,14 +223,14 @@ The objective is to build a Docker image from the banking application and then d
 
 Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build, users can create an automated build that executes several command-line instructions, step by step.
 
-1. Create your Linux on Z to build the docker image from the LinuxOne Community Cloud following the [virtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
+1. Create your LinuxONE virtual server to build the docker image from the LinuxOne Community Cloud following the [virtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
 
 	1. You will request access to LinuxONE Community Cloud.
 	2. You will make a first time setup.
 	3. You will deploy your LinuxONE virtual server.
 	4. You will log in to your LinuxONE virtual server using SSH.
 	
-2. Clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your Linux on Z:
+2. Once logged in, Clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
 
 	`git clone YOUR_USERNAME/ICp-banking-microservices`
 
