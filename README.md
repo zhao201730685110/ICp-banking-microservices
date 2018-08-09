@@ -260,11 +260,11 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 	`sudo docker run -p 3000:3000 YOUR_USERNAME-banking-image`
 	
-7. Go to a browser and visit the http://LINUX_IP:3000. You application in up and running.
+7. Go to a browser and visit the http://LINUX_IP:3000. Test Your application :)
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
-In this Code Pattern, an automatic process (Jenkins build) has been initially set up to build and deploy the Docker image to ICp. 
+In this Code Pattern, an automatic process (Jenkins build) has been initially set up for you to deploy the Docker image to ICp. 
 
 ![alt text](images/devops.png "DevOps")
 
@@ -276,22 +276,22 @@ The Jenkins build processed as follow:
 	
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
-**If you are practicing thois pattern during  an IBM event like SHARE, Think, you are authorized to practice this continuous integration. Otherwise, go to the next step:**
-
-4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME`
-	
-	* Ask the URL_CICD_SEREVER to an IBMer.
-	* Replace *GITHUB_USERNAME* with your username.
-
-5. Click **Enter**. The deployment is processing : 
- 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
- 	* The process builds the Docker image from the Docker file described before. 
- 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
- 	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
-	
-6. Wait for the successful completion of your build: **Deployment successful**
-
-As a result, the banking application is now ready to be instantiated from the ICp catalog.
+> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, you are authorized to practice this deployment. Otherwise, go to the next step:**
+>
+> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME`
+>	
+>	* Ask the URL_CICD_SEREVER to an IBMer.
+>	* Replace *GITHUB_USERNAME* with your username.
+>
+> 5. Click **Enter**. The deployment is processing : 
+> 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
+> 	* The process builds the Docker image from the Docker file described before. 
+> 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
+> 	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
+>	
+> 6. Wait for the successful completion of your build: **Deployment successful**
+>
+> As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
 ---
 
