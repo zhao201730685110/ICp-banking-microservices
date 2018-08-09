@@ -268,12 +268,34 @@ In this Code Pattern, an automatic process (Jenkins build) has been initially se
 
 ![alt text](images/devops.png "DevOps")
 
-The Jenkins build processed as follow :
+The Jenkins build processed as follow:
 
 1. Jenkins pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
 2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*.
 3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
 	
+As a result, the banking application is now ready to be instantiated from the ICp catalog.
+
+I you join an IBM event like SHARE, Think, you are authorized to practice this continuous integration. Otherwise, go to the next step.
+
+4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME`
+	
+	* Ask the URL_CICD_SEREVER to an IBMer.
+	* Replace *GITHUB_USERNAME* with your username.
+
+5. Click **Enter**. The deployment is processing : 
+ 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
+ 	* The process builds the Docker image from the Docker file described before. 
+ 	* The build action automatically adds the Docker image to the Docker image repository of the ICp Worker Node on Linux on Z. 
+ 	* The Docker image is **YOUR_USERNAME-icp-banking-microservices**. It is tagged *lastest*. This is your docker image name and will be refered as "YOUR_IMAGE_NAME". 
+ The deployment has been processed as follow : 
+ 	* The process pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
+ 	* The process built the Docker image from the Docker file described before. 
+ 	* The build action automatically added the Docker image to the Docker image repository of ICp. 
+ 	* The Docker image has been called **code-pattern-icp-banking-microservices** and tagged *lastest*. It will be refered as "DOCKER_IMAGE_NAME". 
+ 	
+6. Wait for the successful completion of your build: **Deployment successful**
+
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
 ---
