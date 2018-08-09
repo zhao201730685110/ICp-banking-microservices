@@ -264,7 +264,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
-In this Code Pattern, an automatic process (Jenkins build) has been initially set up for you to deploy the Docker image to ICp. 
+In this Code Pattern, an default automatic process (Jenkins build) has been set up for you to deploy the Docker image to ICp. 
 
 ![alt text](images/devops.png "DevOps")
 
