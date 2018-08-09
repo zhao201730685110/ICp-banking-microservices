@@ -276,9 +276,9 @@ The Jenkins build processed as follow:
 	
 > NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, you are authorized to practice this deployment. Otherwise, go to the next step:**
 >
-> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME` 
+> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SERVER/deploy/GITHUB_USERNAME` 
 >	
->	* Ask the URL_CICD_SEREVER to an IBMer.
+>	* Ask the URL_CICD_SERVER to the IBMer managing the lab session.
 >	* Replace *GITHUB_USERNAME* with your username.
 >
 > 5. Click **Enter**. The deployment is processing : 
