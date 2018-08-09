@@ -17,8 +17,8 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 ![alt text](images/arch-build-deploy-financial-microservice.png "Architecture")
 
-1. The user deploys a docker image (banking application based microservice) to the IBM Cloud Private docker registry.
-2. The user configures and runs a container based on the previous docker image from IBM Cloud Private catalog. Once started, the application calls banking APIs published in API Connect.
+1. The user deploys a Docker image (banking application based microservice) to the IBM Cloud Private Docker registry.
+2. The user configures and runs a container based on the previous Docker image from IBM Cloud Private catalog. Once started, the application calls banking APIs published in API Connect.
 3. API Connect calls the back-end Z Mainframe through a banking API published in z/OS Connect EE.
 4. z/OS Connect EE calls the Account Management System (AMS) running in CICS. A COBOL program processes the request and returns banking data. Finally, banking data are sent back to the microservice application.
 
@@ -33,7 +33,7 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 # Featured technologies
 
-* [Docker](https://www.docker.com/)
+* [Docker](https://www.Docker.com/)
 * [Microservice](https://www.ibm.com/cloud/garage/architectures/microservices/)
 * [IBM LinuxOne](https://www.ibm.com/it-infrastructure/linuxone)
 * [IBM Z Mainframe](https://www.ibm.com/it-infrastructure/z)
@@ -49,10 +49,10 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 - [Part 3 - Run the banking application with Node.js](#part-3---run-the-banking-application-with-nodejs)
 - [Part 4 - Push the banking application to your GitHub repository](#part-4---push-the-banking-application-to-your-github-repository)
 
-### Step 2 - Build and deploy a docker image to IBM Cloud private
+### Step 2 - Build and deploy a Docker image to IBM Cloud private
 
-- [Part 1 - Build the Docker image from the LinuxOne Community Cloud](#part-1---build-the-docker-image-from-the-linuxone-community-cloud)
-- [Part 2 - Deploy the docker image to IBM Cloud private](#part-2---deploy-the-docker-image-to-ibm-cloud-private)
+- [Part 1 - Build the Docker image from the LinuxOne Community Cloud](#part-1---build-the-Docker-image-from-the-linuxone-community-cloud)
+- [Part 2 - Deploy the Docker image to IBM Cloud private](#part-2---deploy-the-Docker-image-to-ibm-cloud-private)
 
 ### Step 3 - Instantiate the banking microservice from the IBM Cloud private catalog
 
@@ -104,7 +104,7 @@ The objective is to discover the banking application located in the *banking-app
 	* *public/css*: the application stylesheet.
 	* *public/js*: the JavaScript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
 	* *package.json*: the package dependencies file.
-	* *Dockerfile*: file to build the docker image. it will be used later (step 2).
+	* *Dockerfile*: file to build the Docker image. it will be used later (step 2).
 
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
 
@@ -215,15 +215,15 @@ The objective is to discover the banking application located in the *banking-app
 
 ---
 
-# Step 2 - Build and deploy a docker image to IBM Cloud private
+# Step 2 - Build and deploy a Docker image to IBM Cloud private
 
 The objective is to build a Docker image from the banking application and then deploy it to the IBM Cloud private.
 
 ## Part 1 - Build the Docker image from the LinuxOne Community Cloud
 
-Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using docker build, users can create an automated build that executes several command-line instructions, step by step.
+Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using Docker build, users can create an automated build that executes several command-line instructions, step by step.
 
-1. Create your LinuxONE virtual server to build the docker image from the LinuxOne Community Cloud following the [virtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
+1. Create your LinuxONE virtual server to build the Docker image from the LinuxOne Community Cloud following the [virtual Server Deployment Guide](https://github.com/linuxone-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
 
 	1. You will request access to LinuxONE Community Cloud.
 	2. You will make a first time setup.
@@ -243,31 +243,31 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 	`cat ICp-banking-microservices/banking-application/Dockerfile`
 
-	![alt text](images/dockerfile.png "Dockerfile")
+	![alt text](images/Dockerfile.png "Dockerfile")
 	* *FROM ibmcom/ibmnode*: This command gathers, from IBM's public Docker repository, a Ubuntu Linux image containing all the basic components to run a Node.js application. It will be used as a basis for our usecase. 
 	* *WORKDIR "/app"*: This command creates a directory inside our image, from which we will inject our specific files.
 	* *COPY package.json /app/*: This command copies our **package.json** file into the working directory inside our image. This file holds information about the app, most importantly the package dependencies it will need.
 	* *RUN cd /app; npm install; npm prune --production*: These commands first move our focus to the working directory, then download and install our app's required dependencies.
-	* *COPY . /app*: This command copies everything left of the app into our working directory inside the docker image, i.e. our app's source code.
+	* *COPY . /app*: This command copies everything left of the app into our working directory inside the Docker image, i.e. our app's source code.
 	* *ENV NODE_ENV production* and *ENV PORT 3000*: These two commands set environment variables. The first one tells our Node.js instance that we run in production mode, and thus don't need development libraries. The other one sets the port 3000 as our main networking port.
-	* *EXPOSE 3000*: This command tells docker to map the image's port 3000 to the operating system's port 3000. It will gives us a network access to the docker image and thus the Node.js app.
+	* *EXPOSE 3000*: This command tells Docker to map the image's port 3000 to the operating system's port 3000. It will gives us a network access to the Docker image and thus the Node.js app.
 	* *CMD ["npm", "start"]*: This last command tells Docker what to do when we launch the image, in our case **npm start**, which will start the Node.js app.
 	
-4. Build your docker image:
+4. Build your Docker image:
 
-	`sudo docker build -t "YOUR_USERNAME-banking-image:latest" .`
+	`sudo Docker build -t "YOUR_USERNAME-banking-image:latest" .`
 	
-5. As a result, a docker image is created based on your Docker file and your source code pulled from Github :
+5. As a result, a Docker image is created based on your Dockerfile and your source code pulled from Github :
 
-	`sudo docker images`
+	`sudo Docker images`
 	
-6. Create a new container based on your fresh docker image:
+6. Create a new container based on your fresh Docker image:
 
-	`sudo docker run -p 3000:3000 YOUR_USERNAME-banking-image`
+	`sudo Docker run -p 3000:3000 YOUR_USERNAME-banking-image`
 	
 7. Go to a browser and visit the http://LINUX_IP:3000. Test Your application :)
 
-## Part 2 - Deploy the docker image to IBM Cloud private
+## Part 2 - Deploy the Docker image to IBM Cloud private
 
 In this Code Pattern, an default automatic process (Jenkins build) has been set up for you to deploy the Docker image to ICp. 
 
