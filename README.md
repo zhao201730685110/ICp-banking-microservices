@@ -230,7 +230,12 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	3. You will deploy your LinuxONE virtual server.
 	4. You will log in to your LinuxONE virtual server using SSH.
 	
-2. Once logged in, Clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
+	As a result, you have your LinuxONE virtual server created and you are logged in via SSH.
+	![alt text](images/linux1CC-virtual-server.png "Virtual server")
+	
+	
+	
+2. Clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
 
 	`git clone YOUR_USERNAME/ICp-banking-microservices`
 
