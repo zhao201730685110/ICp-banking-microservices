@@ -255,6 +255,12 @@ Docker can build images automatically by reading the instructions from a Dockerf
 5. As a result, a docker image is created based on your Docker file and your source code pulled from Github :
 
 	`sudo docker images`
+	
+6. Create a new container based on your fresh docker image:
+
+	`sudo docker run -p 3000:3000 YOUR_USERNAME-banking-image`
+	
+7. Go to a browser and visit the http://LINUX_IP:3000. You application in up and running.
 
 ## Part 2 - Deploy the docker image to IBM Cloud private
 
