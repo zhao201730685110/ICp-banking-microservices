@@ -178,8 +178,6 @@ The objective is to discover the banking application located in the *banking-app
 	![alt text](images/node-app-js.png "node app.js")
 	* As a result, The banking application is started.
 	
-
-
 4. Launch a web browser and go to **localhost:3000**. The banking application appears.
     
 	![alt text](images/banking_app.png "Banking application")
@@ -233,9 +231,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	As a result, you have your LinuxONE virtual server created (YOUR_LINUX_IP is your LinuxONE virtual server IP Adress).
 	![alt text](images/linux1CC-virtual-server.png "Virtual server")
 	
-	
-	
-2. Once logged in, clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
+2. Once logged in using SSH, clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
 
 	`git clone YOUR_USERNAME/ICp-banking-microservices`
 
