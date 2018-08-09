@@ -230,12 +230,12 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	3. You will deploy your LinuxONE virtual server.
 	4. You will log in to your LinuxONE virtual server using SSH.
 	
-	As a result, you have your LinuxONE virtual server created and you are logged in via SSH.
+	As a result, you have your LinuxONE virtual server created (YOUR_LINUX_IP is your LinuxONE virtual server IP Adress).
 	![alt text](images/linux1CC-virtual-server.png "Virtual server")
 	
 	
 	
-2. Clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
+2. Once logged in, clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
 
 	`git clone YOUR_USERNAME/ICp-banking-microservices`
 
@@ -261,11 +261,21 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 	`sudo Docker images`
 	
-6. Create a new container based on your fresh Docker image:
+6. Create manually a new container based on your fresh Docker image:
 
 	`sudo Docker run -p 3000:3000 YOUR_USERNAME-banking-image`
 	
-7. Go to a browser and visit the http://LINUX_IP:3000. Test Your application :)
+	
+4. Launch a web browser and go to **YOUR_LINUX_IP:3000**. The banking application appears.
+    
+	![alt text](images/banking_app.png "Banking application")
+
+5. Test your application.
+
+	![alt text](images/banking_app_test.png "Banking application")
+    * Select a customer ID.
+    * Please wait while the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
+    * The result is displayed in a JSON structure.
 
 ## Part 2 - Deploy the Docker image to IBM Cloud private
 
