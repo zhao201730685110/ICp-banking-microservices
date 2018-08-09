@@ -51,8 +51,8 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 ### Step 2 - Build and deploy a Docker image to IBM Cloud private
 
-- [Part 1 - Build the Docker image from the LinuxOne Community Cloud](#part-1---build-the-Docker-image-from-the-linuxone-community-cloud)
-- [Part 2 - Deploy the Docker image to IBM Cloud private](#part-2---deploy-the-Docker-image-to-ibm-cloud-private)
+- [Part 1 - Build the Docker image from the LinuxOne Community Cloud](#part-1---build-the-docker-image-from-the-linuxone-community-cloud)
+- [Part 2 - Deploy the Docker image to IBM Cloud private](#part-2---deploy-the-docker-image-to-ibm-cloud-private)
 
 ### Step 3 - Instantiate the banking microservice from the IBM Cloud private catalog
 
