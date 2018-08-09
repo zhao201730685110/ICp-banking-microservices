@@ -239,7 +239,7 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 	`cat ICp-banking-microservices/banking-application/Dockerfile`
 
-	![alt text](images/Dockerfile.png "Dockerfile")
+	![alt text](images/dockerfile.png "Dockerfile")
 	* *FROM ibmcom/ibmnode*: This command gathers, from IBM's public Docker repository, a Ubuntu Linux image containing all the basic components to run a Node.js application. It will be used as a basis for our usecase. 
 	* *WORKDIR "/app"*: This command creates a directory inside our image, from which we will inject our specific files.
 	* *COPY package.json /app/*: This command copies our **package.json** file into the working directory inside our image. This file holds information about the app, most importantly the package dependencies it will need.
