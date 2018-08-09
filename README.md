@@ -278,7 +278,7 @@ As a result, the banking application is now ready to be instantiated from the IC
 
 > NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, you are authorized to practice this deployment. Otherwise, go to the next step:**
 >
-> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME`
+> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SEREVER/deploy/GITHUB_USERNAME` 
 >	
 >	* Ask the URL_CICD_SEREVER to an IBMer.
 >	* Replace *GITHUB_USERNAME* with your username.
@@ -324,6 +324,8 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 4. Click on the Helm Chart called **openmplbank - Banking dashboard** to see the overview of the this banking microservice.
 
+	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, Click on the Helm Chart called **openmplbank-ibm-lab4share**
+
 	![alt text](images/icp-banking-microservices.png "ICp catalog")
 
 
@@ -340,6 +342,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
 	* Select an available target namespace in the list.
 	* The image repository is already filled with the Docker image defined before: **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices**.
+	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, fill the The image repository with your YOUR_IMAGE_NAME.
 
 3. Click the **Install** button. When the process is finished, click **View Helm Release**.
 
