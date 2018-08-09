@@ -303,7 +303,6 @@ The Jenkins build processed as follow:
 > 	
 > 6. Wait for the successful completion message of your build: **Deployment successful**
 > ![alt text](images/deployment_githubname.png "Banking application")
->
 
 As a result, the banking application is now ready to be instantiated from the ICp catalog.
 
