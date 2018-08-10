@@ -316,7 +316,7 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 ## Part 1 - Discover the Helm chart from the calalog
 
-1. Subscribe to [IBM Cloud private in the Linux One Community Cloud](https://developer.ibm.com/linuxone/home-l1cc30-test/)
+1. Subscribe to [IBM Cloud private in the Linux One Community Cloud](https://developer.ibm.com/linuxone/)
 ![alt text](images/0.18C.gif "ICp subscription")
     * Click **Try Container**.
     * Fill the form and submit.
