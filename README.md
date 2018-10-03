@@ -252,15 +252,15 @@ Docker can build images automatically by reading the instructions from a Dockerf
 	
 4. Build your Docker image:
 
-	`sudo Docker build -t "YOUR_USERNAME-banking-image:latest" .`
+	`sudo docker build -t "YOUR_USERNAME-banking-image:latest" .`
 	
 5. As a result, a Docker image is created based on your Dockerfile and your source code pulled from Github :
 
-	`sudo Docker images`
+	`sudo docker images`
 	
 6. Create manually a new container based on your fresh Docker image:
 
-	`sudo Docker run -p 3000:3000 YOUR_USERNAME-banking-image`
+	`sudo docker run -p 3000:3000 YOUR_USERNAME-banking-image`
 	
 	
 4. Launch a web browser and go to **YOUR_LINUX_IP:3000**. The banking application appears.
