@@ -174,7 +174,7 @@ The objective is to discover the banking application located in the *banking-app
 	![alt text](images/npm-install.png "npm install")
 	* As a result, dependencies are installed in your project folder.
 
-5. Run the banking application using : `node banking-application/app.js` :
+5. Run the banking application using : `node app.js` :
 	![alt text](images/node-app-js.png "node app.js")
 	* As a result, The banking application is started.
 	
@@ -194,15 +194,19 @@ The objective is to discover the banking application located in the *banking-app
 
 ## Part 4 - Push the banking application to your GitHub repository
 
-1. Commit the fresh code you modified to add changes to the local repository:
+1. Add the *bankingAPI.js* file you just modified to the current content index:
+
+	`git add public/js/bankingAPI.js`
+
+2. Commit the fresh code you modified to add changes to the local repository:
 
    `git commit -m "Update of bankingAPI.js"`
 
-2. Push the code you commited to transfer the last commit to your GitHub repository *ICp-banking-microservices*:
+3. Push the code you commited to transfer the last commit to your GitHub repository *ICp-banking-microservices*:
 
    `git push`
 
-3. Go back to your online Github repository *ICp-banking-microservices* using the web browser. 
+4. Go back to your online Github repository *ICp-banking-microservices* using the web browser. 
 
 	![alt text](images/commit-push-repo.png "git push")
 	* Check that your code has been updated with commit label *Update of BankingAPI.js*
